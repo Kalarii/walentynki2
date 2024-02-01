@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>niespodzianka na walentynki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zostaniesz moją walentynką</h1>
+    <img src="kotek.jpg" alt="Cute Cat">
+
+    <div class="checkbox-container">
+        <label for="checkbox1" class="checkbox">
+            <input type="checkbox" id="checkbox1" onchange="showFlowers()"> tak
+        </label>
+
+        <label for="checkbox2" class="checkbox">
+            <input type="checkbox" id="checkbox2" onchange="showFlowers()"> tak
+        </label>
+    </div>
+
+    <img id="flowers" class="hidden" src="gozdziki.jpg" alt="Carnation Flowers">
+
+    <script>
+        // JavaScript code remains unchanged
+        function showFlowers() {
+            var flowersImage = document.getElementById("flowers");
+            var checkbox1 = document.getElementById("checkbox1");
+            var checkbox2 = document.getElementById("checkbox2");
+
+            if (checkbox1.checked || checkbox2.checked) {
+                flowersImage.classList.remove("hidden");
+            } else {
+                flowersImage.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>

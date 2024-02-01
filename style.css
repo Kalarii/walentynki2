@@ -1,0 +1,39 @@
+/* style.css */
+
+body {
+    background-color: pink;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+h1 {
+    color: white;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.checkbox {
+    margin-right: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
